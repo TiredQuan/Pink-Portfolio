@@ -1,5 +1,65 @@
-@use "sass:meta";
 @import 'functions';
 
 
+@font-face {
+    font-family: Pattaya;
+    src: url(/fonts/Pattaya/Pattaya-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+}
 
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+
+    //font-family: 'Pattaya', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+
+    $font-weight: (
+        "thin": 400,
+        "regular":500,
+        "semi-bold": 600,
+        "bold": 700
+    );
+    $font-size: (
+        "small": rem(18),
+        "mid": rem(24),
+        "big": rem(36),
+        "huge": rem(48)
+    );
+
+    //Colors
+
+    $nav: #B74C4C6B;
+    $hero: #B05555A1;
+    $card: #B74C4C59;
+    $button: #C0694D78;
+
+
+    //Media quaries
+    $desktop:700px;

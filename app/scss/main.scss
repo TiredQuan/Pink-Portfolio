@@ -3,11 +3,52 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
+@import 'base/reset';
 @import 'base/typography';
 
 
-
-
+header{
+    &>nav{
+        background-color: $nav;
+        position: relative;
+        display: flex;
+        padding: 0 rem(20);
+        justify-content: space-between;
+        align-items: center;
+        height: rem(100);
+        &>div{
+            width: rem(200);
+        }
+        &>button{
+            background-color: $nav;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: rem(40);
+            height: rem(40);
+            border-radius: rem(5);
+            background:center/cover no-repeat
+            background-image: url('/images/bx-menu.svg');
+            &>img{
+                width: rem(30);
+                height: rem(30);
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(61deg) brightness(107%) contrast(101%);
+            }
+        }
+    }
+}
+.menu-popUp{
+    width: rem(300);
+    height: rem(500);
+    background-color: $nav;
+    position: absolute;
+    left:0;
+    right:0;
+    top: rem(125);
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
 
 
 

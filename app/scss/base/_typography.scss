@@ -1,0 +1,18 @@
+
+
+
+
+
+@media (min-width:$desktop){
+    h1{
+        font-size: map-get($font-size, 'huge' );
+
+    }
+}
+h1{
+    font-size: map-get($font-size, 'big' );
+    font-family: 'Pattaya', sans-serif;
+}
+h2{
+    font-size: map-get($font-size, 'big' );
+}

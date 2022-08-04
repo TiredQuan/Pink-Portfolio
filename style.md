@@ -28,3 +28,15 @@ Pattaya
 #B05555A1 (hero)
 #B74C4C59 (card)
 #C0694D78 (button)
+
+
+
+
+
+
+
+# Nav mobile fix
+Logo in the middle
+Menu on the right hand corner
+pop up menu: squared with round edges
+The search Icon get changed to a search button
