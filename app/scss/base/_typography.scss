@@ -3,16 +3,52 @@
 
 
 
-@media (min-width:$desktop){
-    h1{
-        font-size: map-get($font-size, 'huge' );
-
-    }
-}
 h1{
-    font-size: map-get($font-size, 'big' );
+    font-size: map-get($font-size, 'mid' );
     font-family: 'Pattaya', sans-serif;
+    @media (min-width:$desktop){
+            font-size: map-get($font-size, 'huge' );
+    }
 }
 h2{
     font-size: map-get($font-size, 'big' );
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Poppins',sans-serif;
+}
+
+p,a{
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.active{
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: transform 0.2s ease-in-out;
+        transform: scale(0);
+    }
+    &:hover::after{
+        transform: scale(1);
+    }
+    &:active{
+        color: rgb(179, 179, 179);
+    }
+    &:active::after{
+        background: rgb(179, 179, 179);
+    }
+
+}
+
+.white{
+    color: white;
 }

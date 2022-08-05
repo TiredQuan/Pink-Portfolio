@@ -15,32 +15,49 @@
                 <h1>Vamesha Ramanay</h1>
             </div>
 
-            <button class="mobile-ham"><img src="images/bx-menu.svg" alt=""></button>
+            <button class="mobile-ham close" id="ham" onclick="mobileClick()"></button>
 
             <!-- MOBILE HAMBERGER POP UP -->
             <div class="menu-popUp">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Search">
-                    <button><img src="images/bx-search.svg" alt=""></button>
-                </form>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Search</a></li>
+                <ul class="mobile-ul">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Search">
+                        <button></button>
+                    </form>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#" class="active">Service</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                    <li><a href="#" class="active">Search</a></li>
+                </ul>
             </div>
 
-            <!-- 
-                DESKTOP DESIGN
-                
-                <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button><img src="/images/bx-search.svg" alt=""></button></li>
-            </ul> -->
+            
+
+                <ul class="desktop-ul">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#" class="active">Service</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+                <li><button onclick="searchBar()"></button></li>
+                <form action="" class="show-search close1">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <button></button>
+                </form>
+            </ul>
         </nav>
     </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero-Portrait2.png" alt="Vamesha Portrait">
+            <article class="white">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit omnis excepturi eius quisquam fugit voluptas, dicta dignissimos sunt illo id delectus suscipit reiciendis nihil debitis, aliquam, commodi fugiat enim.</p>
+                <button>Let's Chat</button>
+                <div><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+            </article>
+        </section>
+    </main>
+    <script src="/dist/script.min.js"></script>
 </body>
 </html>
