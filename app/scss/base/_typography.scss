@@ -8,6 +8,7 @@ h1{
     font-family: 'Pattaya', sans-serif;
     @media (min-width:$desktop){
             font-size: map-get($font-size, 'huge' );
+            margin-left: rem(100);
     }
 }
 h2{

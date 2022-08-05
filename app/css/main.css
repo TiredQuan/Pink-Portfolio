@@ -100,6 +100,7 @@ h1 {
 @media (min-width: 700px) {
   h1 {
     font-size: 3rem;
+    margin-left: 6.25rem;
   }
 }
 
@@ -173,6 +174,7 @@ header > nav > button {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
   background: center/cover no-repeat;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(61deg) brightness(107%) contrast(101%);
 }
@@ -202,6 +204,7 @@ header > nav > .desktop-ul {
     position: relative;
   }
   header > nav > .desktop-ul > li > button {
+    cursor: pointer;
     background: center/cover no-repeat url("/images/bx-search.svg");
     width: 1.4375rem;
     height: 1.4375rem;
@@ -369,6 +372,7 @@ header > nav > .desktop-ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2.5rem 0;
 }
 .flipFlop > article > img {
   width: 100%;
@@ -410,10 +414,69 @@ header > nav > .desktop-ul {
   }
 }
 
+.pinkCard {
+  background-color: rgba(183, 76, 76, 0.3490196078);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.pinkCard > article {
+  background-color: white;
+  padding: 1.25rem 0.625rem;
+  position: relative;
+}
+.pinkCard > article::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  position: absolute;
+  color: black;
+  padding: 0.3125rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.pinkCard > article > * {
+  margin: 1.25rem 0;
+}
+.pinkCard > article > button {
+  background-color: rgba(183, 76, 76, 0.3490196078);
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.pinkCard > article > button:hover {
+  background-color: #e77070;
+}
+.pinkCard > article > button:active {
+  background-color: #b74c4c;
+}
+@media (min-width: 700px) {
+  .pinkCard {
+    padding: 2.8125rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .pinkCard > article {
+    width: 40%;
+    height: 40%;
+  }
+  .pinkCard > article > * {
+    margin: 1.25rem 2.5rem;
+  }
+}
+
 .bigButton {
   width: 12.5rem;
   height: 2.5rem;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1875rem;
 }
 
 .smallButton {
@@ -425,6 +488,13 @@ header > nav > .desktop-ul {
   font-family: "Poppins", sans-serif;
   color: white;
   letter-spacing: 0.1875rem;
+  transition: background-color 0.1s ease;
+}
+.smallButton:hover {
+  background-color: #d59782;
+}
+.smallButton:active {
+  background-color: #c06a4d;
 }
 
 .linkIcon {

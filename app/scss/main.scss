@@ -24,6 +24,7 @@ header{
             width: rem(40);
             height: rem(40);
             border-radius: rem(5);
+            cursor: pointer;
             background:center/cover no-repeat;
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(61deg) brightness(107%) contrast(101%);
         }
@@ -54,6 +55,7 @@ header{
                 position: relative;
                 &>li{
                     &>button{
+                        cursor: pointer;
                         background: center/cover no-repeat url('/images/bx-search.svg');
                         width: rem(23);
                         height: rem(23);
@@ -231,6 +233,7 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: rem(40) 0;
             &>img{
                     width: 100%;
                     border: rem(20) solid $button;
@@ -273,11 +276,72 @@ header{
                 &flop{
                     flex-direction: row-reverse !important;
                 }
-
         }
     }
     
 
+    .pinkCard{
+        background-color: $card;
+        padding: rem(20);
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+        &>article{
+            background-color: white;
+            padding: rem(20) rem(10);
+            position: relative;
+            &::after{
+                content: '\f061';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-style: normal;
+                position: absolute;
+                color: black;
+                padding: rem(5);
+                border: 1px solid black;
+                border-radius: 50%;
+                top: 5%;
+                right: 5%;
+                cursor: pointer;
+            }
+            //::After:hover doesn't work
+            // &::after:hover{
+            //     color: white;
+            //     border-color: white;
+            // }
+            //mobile side padidng 10 desktop should probably be 40
+            &>*{
+                margin: rem(20) 0;
+            }
+            &>button{
+                background-color: $card;
+                border-radius: rem(5);
+                cursor: pointer;
+                transition: background-color 0.1s ease;
+                &:hover{
+                    background-color: #e77070;
+                }
+                &:active{
+                    background-color: #b74c4c;
+                }
+            }
+        }
+        @media (min-width:$desktop) {
+            padding: rem(45);
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: rem(40);
+            &>article{
+                width: 40%;
+                height: 40%;
+                &>*{
+                    margin: rem(20) rem(40);
+                }
+            }
+            
+        }
+    }
 
 
 
@@ -286,6 +350,7 @@ header{
     width: rem(200);
     height: rem(40);
     font-family: 'Poppins', sans-serif;
+    letter-spacing: rem(3);
 }
 .smallButton{
     width: rem(90);
@@ -296,6 +361,13 @@ header{
     font-family: 'Poppins', sans-serif;
     color: white;
     letter-spacing: rem(3);
+    transition: background-color 0.1s ease;
+    &:hover{
+        background-color:#d59782 ;
+    }
+    &:active{
+        background-color: #c06a4d;
+    }
 }
 .linkIcon{
     color: rgb(59, 59, 59);
@@ -307,3 +379,7 @@ header{
         color: black;
     }
 }
+
+
+
+
