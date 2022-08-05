@@ -168,7 +168,6 @@ header{
 
 
 
-main{
     .hero{
         width: 100%;
         display: flex;
@@ -183,18 +182,128 @@ main{
             border-radius: 50%;
         }
         &>article{
+            padding: 0 rem(50);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &>h2{
+                margin: rem(30) 0;
+            }
+            &>*:not(h2){
+                margin: rem(15) 0;
+            }
             &>button{
-                width: rem(200);
-                height: rem(40);
+                background-color: #E6C8C8;
+                transition: background-color 0.3s ease;
+                letter-spacing: rem(3);
+
+                &:hover{
+                    background-color: #E08383;
+                }
+                &:active{
+                    background-color: white;
+                }
+            }
+            &>div{
+                width: 150px;
+                display: flex;
+                justify-content: space-around;
             }
         }
+        @media (min-width:$desktop){
+            flex-direction: row;
+            justify-content: space-evenly;
+            &>img{
+                width: 25%;
+            }
+            &>article{
+                width: 50%;
+            }
+        }
+    }
 
+
+    .flipFlop{
+        padding: rem(50) rem(20);
+        &>article{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &>img{
+                    width: 100%;
+                    border: rem(20) solid $button;
+            }
+            &>div{
+                padding: 0 rem(20);
+                &>div{
+                }
+                &>p{
+                    line-height: rem(30);
+                }
+                &>div>h3{
+                    padding-top: rem(30);
+                }
+                &>div>*{
+                    padding: rem(5) 0;
+                }
+            }
+        }
+        
+        @media (min-width:$desktop){
+            &>article{
+                padding: 0 rem(80);
+                gap: rem(20);
+                &>div>div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &>h3{
+                        padding: rem(20) 0;
+                    }
+                }
+                img{
+                    width: 100%;
+                    }
+                }
+                &flip{
+                    flex-direction: row !important;
+                }
+                &flop{
+                    flex-direction: row-reverse !important;
+                }
+
+        }
+    }
+    
+
+
+
+
+
+.bigButton{
+    width: rem(200);
+    height: rem(40);
+    font-family: 'Poppins', sans-serif;
+}
+.smallButton{
+    width: rem(90);
+    height: rem(35);
+    border-radius: rem(5);
+    background-color: $button;
+    font-size: map-get($font-size, 'small' );
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: rem(3);
+}
+.linkIcon{
+    color: rgb(59, 59, 59);
+    transition: color 0.3s ease;
+    &:hover{
+        color: white;
+    }
+    &:active{
+        color: black;
     }
 }
-
-
-
-
-
-
-

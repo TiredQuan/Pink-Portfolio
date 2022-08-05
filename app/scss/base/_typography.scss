@@ -17,6 +17,16 @@ h2,h3,h4,h5,h6{
     font-family: 'Poppins',sans-serif;
 }
 
+h3,h4,h5{
+    letter-spacing: rem(4);
+}
+
+p{
+    font-size:rem(13);
+    letter-spacing: rem(3);
+    font-weight: 400;
+}
+
 p,a{
     font-family: 'Poppins',sans-serif;
 }

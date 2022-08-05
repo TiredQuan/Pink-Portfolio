@@ -111,6 +111,16 @@ h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+h3, h4, h5 {
+  letter-spacing: 0.25rem;
+}
+
+p {
+  font-size: 0.8125rem;
+  letter-spacing: 0.1875rem;
+  font-weight: 400;
+}
+
 p, a {
   font-family: "Poppins", sans-serif;
 }
@@ -295,7 +305,7 @@ header > nav > .desktop-ul {
   }
 }
 
-main .hero {
+.hero {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -305,11 +315,125 @@ main .hero {
   background-color: rgba(176, 85, 85, 0.631372549);
   text-align: center;
 }
-main .hero img {
+.hero img {
   width: 50%;
   border-radius: 50%;
 }
-main .hero > article > button {
+.hero > article {
+  padding: 0 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero > article > h2 {
+  margin: 1.875rem 0;
+}
+.hero > article > *:not(h2) {
+  margin: 0.9375rem 0;
+}
+.hero > article > button {
+  background-color: #E6C8C8;
+  transition: background-color 0.3s ease;
+  letter-spacing: 0.1875rem;
+}
+.hero > article > button:hover {
+  background-color: #E08383;
+}
+.hero > article > button:active {
+  background-color: white;
+}
+.hero > article > div {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 700px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .hero > img {
+    width: 25%;
+  }
+  .hero > article {
+    width: 50%;
+  }
+}
+
+.flipFlop {
+  padding: 3.125rem 1.25rem;
+}
+.flipFlop > article {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flipFlop > article > img {
+  width: 100%;
+  border: 1.25rem solid rgba(192, 105, 77, 0.4705882353);
+}
+.flipFlop > article > div {
+  padding: 0 1.25rem;
+}
+.flipFlop > article > div > p {
+  line-height: 1.875rem;
+}
+.flipFlop > article > div > div > h3 {
+  padding-top: 1.875rem;
+}
+.flipFlop > article > div > div > * {
+  padding: 0.3125rem 0;
+}
+@media (min-width: 700px) {
+  .flipFlop > article {
+    padding: 0 5rem;
+    gap: 1.25rem;
+  }
+  .flipFlop > article > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flipFlop > article > div > div > h3 {
+    padding: 1.25rem 0;
+  }
+  .flipFlop > article img {
+    width: 100%;
+  }
+  .flipFlopflip {
+    flex-direction: row !important;
+  }
+  .flipFlopflop {
+    flex-direction: row-reverse !important;
+  }
+}
+
+.bigButton {
   width: 12.5rem;
   height: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.smallButton {
+  width: 5.625rem;
+  height: 2.1875rem;
+  border-radius: 0.3125rem;
+  background-color: rgba(192, 105, 77, 0.4705882353);
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 0.1875rem;
+}
+
+.linkIcon {
+  color: rgb(59, 59, 59);
+  transition: color 0.3s ease;
+}
+.linkIcon:hover {
+  color: white;
+}
+.linkIcon:active {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
