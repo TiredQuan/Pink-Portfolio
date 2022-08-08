@@ -25,3 +25,22 @@ function searchBar(){
         showSearch[0].classList.add('close1')
     }
 }
+
+$(document).ready(function() {
+    $('#clientSay .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1,
+        navText: [`<i class="far fa-arrow-alt-circle-left"></i>`,`<i class="far fa-arrow-alt-circle-right"></i>`],
+    items: 1
+    });
+    $('#followMe .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1
+    });
+    
+});
+

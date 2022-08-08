@@ -116,6 +116,10 @@ h3, h4, h5 {
   letter-spacing: 0.25rem;
 }
 
+h4 {
+  color: white;
+}
+
 p {
   font-size: 0.8125rem;
   letter-spacing: 0.1875rem;
@@ -506,4 +510,109 @@ header > nav > .desktop-ul {
 }
 .linkIcon:active {
   color: black;
+}
+
+.clientSay {
+  padding: 1.25rem;
+  text-align: center;
+  position: relative;
+}
+.clientSay::before {
+  background: center/cover no-repeat url("/images/clientBackground.png");
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+}
+.clientSay h3 {
+  margin: 2.5rem 0;
+}
+.clientSay div div p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  line-height: 1.875rem;
+}
+
+#clientSay .owl-prev {
+  left: 0;
+  bottom: 0;
+}
+#clientSay .owl-next {
+  right: 0;
+  top: -55%;
+}
+#clientSay .owl-next, #clientSay .owl-prev {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+#clientSay .owl-next > i, #clientSay .owl-prev > i {
+  font-size: 1.5625rem;
+}
+
+.followMe {
+  background-color: rgba(183, 76, 76, 0.3490196078);
+  height: 15.625rem;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.followMe > .link {
+  margin: 1.25rem 0;
+}
+.followMe > .link > * {
+  padding: 0 0.3125rem;
+}
+
+#followMe {
+  margin: 1.25rem 0;
+}
+#followMe .owl-next > span, #followMe .owl-prev > span {
+  font-size: 1.5625rem;
+}
+#followMe .owl-item > .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#followMe .owl-item > .item img {
+  width: 50%;
+}
+@media (min-width: 700px) {
+  #followMe {
+    display: none;
+  }
+}
+
+.followMeDesktop {
+  display: none;
+}
+@media (min-width: 700px) {
+  .followMeDesktop {
+    display: block;
+  }
+  .followMeDesktop > .imageFlex {
+    margin: 0 auto;
+    height: 15.625rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .followMeDesktop > .imageFlex img {
+    width: 15%;
+    max-width: 12.5rem;
+  }
+  .followMeDesktop > .imageFlex img:nth-child(1), .followMeDesktop > .imageFlex img:nth-child(5) {
+    align-self: flex-start;
+  }
+  .followMeDesktop > .imageFlex img:nth-child(2), .followMeDesktop > .imageFlex img:nth-child(4) {
+    align-self: center;
+  }
 }/*# sourceMappingURL=main.css.map */
