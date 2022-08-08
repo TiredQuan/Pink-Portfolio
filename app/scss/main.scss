@@ -194,6 +194,9 @@ header{
             &>*:not(h2){
                 margin: rem(15) 0;
             }
+            &>p{
+                line-height: rem(20);
+            }
             &>button{
                 background-color: #E6C8C8;
                 transition: background-color 0.3s ease;
@@ -400,15 +403,22 @@ header{
     h3{
         margin: rem(40) 0;
     }
-    div{
-        div{
-            p{
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                line-clamp: 4;
+    &>div{
+        &>div{
+            &>div{
+
+                max-width: rem(850);
+                margin:0 auto;
+                p{
+
+                    display: -webkit-box;
+                    max-width: rem(850);
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    line-clamp: 4;
                 line-height: rem(30);
             }
+        }
         }
     }
 }

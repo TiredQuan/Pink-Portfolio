@@ -338,6 +338,9 @@ header > nav > .desktop-ul {
 .hero > article > *:not(h2) {
   margin: 0.9375rem 0;
 }
+.hero > article > p {
+  line-height: 1.25rem;
+}
 .hero > article > button {
   background-color: #E6C8C8;
   transition: background-color 0.3s ease;
@@ -532,8 +535,13 @@ header > nav > .desktop-ul {
 .clientSay h3 {
   margin: 2.5rem 0;
 }
-.clientSay div div p {
+.clientSay > div > div > div {
+  max-width: 53.125rem;
+  margin: 0 auto;
+}
+.clientSay > div > div > div p {
   display: -webkit-box;
+  max-width: 53.125rem;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   line-clamp: 4;
